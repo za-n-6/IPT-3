@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GamesModelStoreContainer" CdmEntityContainer="GamesEntities">
+    <EntitySetMapping Name="PCs">
+      <EntityTypeMapping TypeName="GamesModel.PC">
+        <MappingFragment StoreEntitySet="PC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="game_name" ColumnName="game_name" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+          <ScalarProperty Name="year" ColumnName="year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PS4">
+      <EntityTypeMapping TypeName="GamesModel.PS4">
+        <MappingFragment StoreEntitySet="PS4">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="game_name" ColumnName="game_name" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+          <ScalarProperty Name="year" ColumnName="year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Xboxes">
+      <EntityTypeMapping TypeName="GamesModel.Xbox">
+        <MappingFragment StoreEntitySet="Xbox">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="game_name" ColumnName="game_name" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+          <ScalarProperty Name="year" ColumnName="year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

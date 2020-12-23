@@ -1,0 +1,58 @@
+﻿@model IEnumerable<IPT_Assignment_3.Models.Xbox>
+<html>
+<head>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("PlayStation", "Index", "Home")</li>
+                <li class="active">@Html.ActionLink("Xbox", "Index", "Xbox")</li>
+                <li>@Html.ActionLink("PC", "Index", "PC")</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container text-center">
+        <h1>XBOX EXCLUSIVES</h1>
+        
+    </div>
+
+    <h2>XB Exclusives List</h2>
+
+    <p>
+        @Html.ActionLink("Add New Game", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.game_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.year)
+            </th>
+           
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.game_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.genre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.year)
+                </td>
+              
+            </tr>
+        }
+
+    </table>
+
+</body>
+</html>
